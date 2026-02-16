@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "CleanYouTube",
+  "version": "1.0",
+  "description": "Чистит YouTube",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
